@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="main" class="centered">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Let us know how we can improve freecodecamp.</p>
+        <form id="survey-form">
+            <label id="name-label">Name<sup>*</sup>: <input id="name" type="text" placeholder="First and last name" required></label>
+            <br>
+            <label id="email-label">Email<sup>*</sup>: <input id="email" type="email" placeholder="jane@example.com" required></label>
+            <br>
+            <label id="number-label">Age: <input id="number" type="number" min="1" max="3" placeholder="20"></label>
+            <br>
+            <label>Which option best describes your current station in life?
+                    <select id="dropdown" name="station">
+                        <option value="student">Student</option>
+                        <option value="full time">Full Time Job</option>
+                        <option value='full time learner'>Full Time Learner</option>
+                        <option value="prefer not to say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+            </label>
+            <br>
+            <label>How likely is it that you would recommend FCC to a friend?<br>
+                <input type="radio" name="recommendation" value="definitely">Definitely<br>
+                <input type="radio" name="recommendation" value="maybe">Maybe<br>
+                <input type="radio" name="recommendation" value="not sure">Not sure<br>
+            </label>
+            <br>
+            <label>Things that should be improved in the future<br>
+(Check all that apply):<br>
+                <input type="checkbox" name="improvements" value="front-end">Front-end projects<br>
+                <input type="checkbox" name="improvements" value="data-viz">Data-viz projects<br>
+                <input type="checkbox" name="improvements" value="back-end">Back-end projects<br>
+
+            </label>
+            <br>
+            <label>Additional comments: <textarea></textarea></label>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</body>
+
+</html>
